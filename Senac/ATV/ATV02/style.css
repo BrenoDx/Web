@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*----Corpo----*/
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #b0bec5;
+    color: #212121;
+}
+h2 {
+    font-family: "Merriweather", serif;
+    color: #1a237e;
+}
+
+/*----Página Conta----*/
+.conteudo-destaque {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8rem;
+}
+.img-destaque2 {
+    max-width: 30rem;
+    border-radius: 15px;
+}
+.texto-destaque {
+    font-size: larger;
+    text-align: center;
+}
+
+/*----Formulário----*/
+.container-formulario {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8rem;
+    font-size: larger;
+}
+.input-linha-1 {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+.input-linha-2 {
+    margin-bottom: 2rem;
+    display:flex;
+    gap: 2rem;
+}
+[type="text"], input[type="email"], input[type="radio"], select {
+    padding: 0.4rem;
+    border: 1px solid #212121;
+    border-radius: 5px;
+}
+input[type="number"]{
+    width: 4rem;
+    border: 1px solid #212121;
+    border-radius: 5px;
+}
+
+
+/*----Cabeçalho----*/
+header {
+    background-color: #1a237e;
+    position: relative;
+    z-index: 10;
+}
+
+/*----Menu lateral----*/
+.container-menu {
+    width: 180px;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #1a237e;
+    position: absolute;
+    z-index: 5;
+    padding:20px;
+    left: 0px;
+    top:4.9rem;
+}
+ul {
+    list-style: none;
+}
+li {
+    display: grid;
+    margin: 3rem 0;
+}
+.a-menu{
+    color:white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.a-menu:hover {
+    font-size: 1.3rem;
+    color: #90caf9;
+}
+
+.img-destaque {
+    width: 80vw;
+    height: auto;
+    object-fit: cover;
+    max-height: 500px;
+    border-radius: 10px;
+    margin-left: 15rem;
+    margin-top: 0.5rem;
+}
+
+/*----Cards----*/
+.container-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
+    flex-wrap: wrap;
+    margin-left: 8rem;  
+}
+.container-emprestimo{
+    background-color: #f5f5f5;
+    border: 2px solid #d6d6d6;
+    border-radius: 10px;
+}
+.container-conta {
+    background-color: #f5f5f5;
+    border: 2px solid #d6d6d6;
+    border-radius: 10px;
+}
+.container-cartao {
+    background-color: #f5f5f5;
+    border: 2px solid #d6d6d6;
+    border-radius: 10px;
+}
+.img-card {
+    padding: 1rem;
+    max-width: 20rem;
+    border-radius: 20px;
+}
+.container-cards h2, p, a{
+    max-width: 280px;
+    text-align: justify;
+    margin: 15px;
+}
+.a-card {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.a-card:hover {
+    color: #0d47a1;
+    text-decoration: underline;
+}
+.container-pessoal {
+    background-color: #f5f5f5;
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+}
+.container-consignado {
+    background-color: #f5f5f5;
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+}
+
+/*----Botão----*/
+button {
+    padding: 0.5rem;
+    border: 1px solid #212121;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button-envie {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+/*----Fieldset----*/
+.field-principal {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #f5f5f5;
+    border: 1px solid #212121;
+    border-radius: 2px ;
+}
+.field-secundario {
+    padding: 0.2rem;
+    border: 1px solid #212121;
+    border-radius: 10px;
+}
+.field-perguntas {
+    padding: 1.5rem;
+    border:1px solid #212121;
+    border-radius: 2px;
+    width: 90rem;
+    background-color: #f5f5f5;
+}
+
+/*----Details----*/
+.container-pr {
+    display: flex;
+    padding: 5rem;
+    margin-left: 8rem;  
+}
+summary {
+    cursor: pointer;
+    margin: 0.2rem;
+}
+.resposta {
+    max-width: 100%;
+    color:#1a237e;
+    margin-left: 1.7rem;
+}
+
+
+/*----Rodapé----*/
+footer {
+    background-color: #1a237e;
+    color: white;
+}
+footer section {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+footer img {
+    height: 2rem;
+}
+footer p {
+    padding: 0.5rem;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conta</title>
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header>
+        <img src="img/Bank-logo.png" alt="Logo-banco">
+    </header>
+    <!--Conteúdo-->
+    <main>
+    <!--Container Menu-->
+        <nav class="container-menu">
+            <ul>
+                <li><a href="inicio.html" class="a-menu">Inicio</a></li>
+                <li><a href="emprestimo.html" class="a-menu">Empréstimo</a></li>
+                <li><a href="conta.html" class="a-menu">Conta</a></li>
+                <li><a href="#" class="a-menu">Cartão</a></li>
+            </ul>
+        </nav>
+    <!--Contéudo destaque-->
+    <section class="conteudo-destaque">
+        <div class="texto-destaque">
+            <h2>Conta bank</h2>
+            <p>Encontre produtos e serviços como cartão de crédito, cheque especial, empréstimos, investimentos, financiamentos, seguros, consórcios e muito mais.</p>
+        </div>
+        <img src="img/Cliente-pag3.jpg" alt="Imagem de cliente" class="img-destaque2">
+    </section>
+    <section class="container-formulario">
+        <form action="paginanovosclientes" method="post">
+            <div class="input-linha-1">
+                <div class="input-nome">
+                    <label>Nome:</label><br>
+                    <input type="text" name="nome_cliente" placeholder="Digite seu nome..."/><br>
+                </div>
+                <div class="menu-suspenso">
+                    <label>Tipo de serviço:</label><br>
+                    <select name="servico">
+                        <option value="conta">Conta</option>
+                        <option value="investimentos">Investimentos</option>
+                        <option value="emprestimo">Empréstimo</option>
+                        <option value="cartao">Cartão</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-linha-2">
+                <div class="input-email">
+                    <label>Email:</label><br>
+                    <input type="email" name="email_cliente" placeholder="Digite seu email..."/>
+                </div>
+                <div class="selecao-unica">
+                    <label>Aposentado?</label><br>
+
+                    <input type="radio" name="aposentado" id="s" value="Sim"/>
+                    <label for="s">Sim</label>
+
+                    <input type="radio" name="aposentado" id="n" value="Nao"/>
+                    <label for="n">Não</label>
+                </div>
+            </div>
+                <div class="input-telefone">
+                    <label>Telefone:</label><br>
+                    <input type="text" name="telefone_cliente" placeholder="Digite seu telefone"/>
+                </div>
+                <div class="button-envie">
+                    <button type="button">Enviar</button>
+                </div>
+            </form>
+    </section>
+    </main>
+    <!--Rodapé-->
+    <footer>
+        <section>
+            <p>(11) 11111-1111</p>
+            <a href="https://www.instagram.com"><img src="img/Instagram-logo.png" alt="Logo-Instagram"></a>
+            <a href="https://x.com"><img src="img/X-logo.png" alt="Logo-X"></a>
+            <a href="https://www.youtube.com"><img src="img/Youtube-logo.png" alt="Logo-Youtube"></a>
+            <a href="https://www.linkedin.com"><img src="img/LinkedIn-logo.png" alt="Logo-LinkedIn"></a>
+        </section>
+    </footer>
+</body>
+</html>

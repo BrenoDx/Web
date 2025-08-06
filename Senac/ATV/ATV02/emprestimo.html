@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Empréstimo</title>
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header>
+        <img src="img/Bank-logo.png" alt="Logo-banco">
+    </header>
+    <!--Conteúdo-->
+    <main>
+    <!--Container-menu-->
+        <nav class="container-menu">
+            <ul>
+                <li><a href="inicio.html" class="a-menu">Inicio</a></li>
+                <li><a href="emprestimo.html" class="a-menu">Empréstimo</a></li>
+                <li><a href="conta.html" class="a-menu">Conta</a></li>
+                <li><a href="#" class="a-menu">Cartão</a></li>
+            </ul>
+        </nav>
+    <!--Container de cards-->
+    <section class="container-conteudo">
+        <div class="container-cards">
+           <article class="container-pessoal">
+                <h2>Empréstimo pessoal</h2>
+                <p>Aqui você encontra crédito rápido e fácil, com condições especiais, prazos diferenciados</p>
+           </article> 
+           <article class="container-consignado">
+                <h2>Empréstimo consignado</h2>
+                <p>Tenha à sua disposição o crédito perfeito para fazer uma viagem, realizar um sonho ou até mesmo resolver um imprevisto do dia a dia.</p>
+           </article>
+        </div>
+    </section>
+    <section class="container-formulario">
+        <fieldset class="field-principal">
+            <h2>Simulação</h2>
+            <form action="paginasimulacao" method="post">
+                <div class="input-linha-1">
+                    <label>Tipo:</label><br>
+                    <select name="Tipo">
+                        <option value="Pessoal">Pessoal</option>
+                        <option value="Consignado">Consignado</option>
+                    </select>
+                    <label>Valor:</label>
+                    <select name="Valor">
+                        <option value="1">fvdfvv</option>
+                    </select>
+                    <label>Parcelas</label>
+                    <input type="number" name="numero_parcelas" id=""/>
+                </div>
+                <div class="input-linha-2">
+                    <fieldset class="field-secundario">
+                        <p>Valor da parcela: </p><br>
+                        <p>R$ </p>
+                    </fieldset>
+                    <a href="conta.html"><button>Seja nosso cliente</button></a>
+                </div>
+            </form>
+        </fieldset>
+    </section>
+    <section class="container-pr">
+        <fieldset class="field-perguntas">
+            <h2>Perguntas frequentes</h2>
+            <details>
+                <summary>Tenho mais de um contrato de crédito, é possível fazer a portabilidade de todos?</summary>
+                <p class="resposta">Sim, você pode fazer a transferência de todos os seus contratos, sendo necessário um pedido de portabilidade para cada contrato.</p>
+            </details>
+            <details>
+                <summary>Quais são as vantagens de compartilhar meus dados para realizar a portabilidade?</summary>
+                <p class="resposta">Com o compartilhamento de dados via Open Finance você não precisa mais entrar em contato com o banco onde o seu empréstimo foi contratado para obter os dados do contrato. As informações do contrato são preenchidas automaticamente na simulação da portabilidade, possibilitando comparar as condições do seu empréstimo</p>
+            </details>
+            <details>
+                <summary>O que é Open Finance?</summary>
+                <p class="resposta">Open Finance é uma solução que possibilita o compartilhamento dos seus dados financeiros (cartão, conta, empréstimos) entre bancos. Tudo isso de forma digital e segura, regulamentada pelo Banco Central e sem custos. O foco do Open Finance é o cliente, dono dos seus próprios dados, e que decide com quem compartilhá-los por período e finalidade específica.</p>
+            </details>
+        </fieldset>
+    </section>
+    </main>
+    <!--Rodapé-->
+    <footer>
+        <section>
+            <p>(11) 11111-1111</p>
+            <a href="https://www.instagram.com"><img src="img/Instagram-logo.png" alt="Logo-Instagram"></a>
+            <a href="https://x.com"><img src="img/X-logo.png" alt="Logo-X"></a>
+            <a href="https://www.youtube.com"><img src="img/Youtube-logo.png" alt="Logo-Youtube"></a>
+            <a href="https://www.linkedin.com"><img src="img/LinkedIn-logo.png" alt="Logo-LinkedIn"></a>
+        </section>
+    </footer>
+</body>
+</html>
