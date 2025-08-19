@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #b19f7e;
+    font-family: "Merriweather", serif;
+    color: black;
+}
+.container {
+    margin: 13rem;
+    background-color: #d8cfaf;
+    border: 5px solid #212121;
+    border-radius: 5px;
+    padding: 2rem;
+    max-width: 800px;
+}
+img {
+    max-width: 35px;
+}
+#erro-cartao{
+    margin-bottom: 0.8rem;
+    font-size: x-small;
+    color: red;
+}
+.linha-input {
+    display: flex;
+    gap:0.5rem;
+    margin-bottom: 0.4rem;
+}
+.linha-dados-cartao {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    margin-bottom: 0.4rem;
+
+}
+.linha-dados-cartao {
+    display: grid;
+    grid-template-columns: 140px 1fr 1fr 1fr;
+    margin-bottom: 0.4rem;
+
+}
+input[type="text"], input[type="month"], select {
+    border: 1px solid #212121;
+    border-radius: 5px;
+    padding: 0.3rem;
+    width: 150px;
+    background-color: #ece7c7;
+}
+input[type="radio"] {
+    accent-color: #212121;
+}
+button {
+    padding:0.3rem;
+    cursor: pointer;
+    border: 1px solid #212121;
+    border-radius: 5px;
+    margin-top: 0.4rem;
+}
+fieldset {
+    margin: 2rem;
+    padding: 0.5rem;
+    border: 2px solid #212121;
+    border-radius: 8px;
+}
+.container-valor{
+    text-align: right;
+}
+h4{
+    text-align: center;
+}

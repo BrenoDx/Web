@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="ocultarInformacoes()">
+    <div class= "container">
+        <div id="form-pagamento">
+            <div class="linha-input">
+                <label>Valor:</label>
+                <input type="text" id="pagamento" placeholder="Digite o valor...">
+            </div>
+            <div class="linha-input">
+                <input type="radio" name = "opcao-pagamento" id = "pix" value="pix"/>
+                <label for="pix">PIX</label>
+            
+                <input type="radio" name = "opcao-pagamento" id = "credito" value="credito"/>
+                <label for="credito">Cartão de Crédito</label>
+            </div>
+            <button class="btn-dados" onclick="detalhesPagamento()">Informar dados</button>
+        </div>
+        <div id="informacoes">
+            <fieldset>
+                <form id="form-dados">
+                    <div id="container-pix">
+                        <h4>PIX</h4>
+                        <div class="linha-dados">
+                            <p>CPF</p>
+                            <input type="text" placeholder="Informe o CPF...">
+                        </div>
+                    </div>
+                    <div id="container-cartao">
+                        <h4>CARTÃO DE CRÉDITO</h4>
+                        <div class="linha-dados-cartao">
+                            <label>Numero</label>
+                            <input type="text" id="numero-cartao" onblur="validarCartao()">
+                            <img src="img/visa.png" alt="img-visa" id="img-visa">
+                            <img src="img/card.png" alt="img-masterCard" id="img-master">  
+                        </div>
+                        <div id="erro-cartao">
+                            <p>Número de cartão inválido</p>
+                        </div>
+                        <div class="linha-dados-cartao">
+                            <label>Titular</label>
+                            <input type="text" id="nome">
+                        </div>
+
+                        <div class="linha-dados-cartao">
+                            <label>Cód. Segurança</label>
+                            <input type="text" id ="cvc">
+                        </div>
+
+                        <div class="linha-dados-cartao">
+                            <label>Vencimento</label>
+                            <input type="month" id="data">
+                        </div>
+
+                        <div class="linha-dados-cartao">
+                            <label>Parcelas</label>
+                            <select id="select-parcelas" onclick="detalhesPagamento()">
+                                <option value="1" id="parcela">1x Sem Juros</option>
+                                <option value="2" id="parcela">2x Sem Juros</option>
+                                <option value="3" id="parcela">3x Sem Juros</option>
+                                <option value="4" id="parcela">4x 5% Juros</option>
+                                <option value="5" id="parcela">5x 10% Juros</option>
+                            </select>
+                        </div>
+                
+                        <p id="parcelas"></p>
+                    </div>
+                </form>
+            </fieldset>
+            <div class="container-valor">
+                <span id="valorTotal"></span>
+            </div>
+            <div id="venda">
+                <button onclick="efetuarPagamento()">PAGAR</button><br>
+                <span id="ven-confirmada"></span>
+            </div>
+        </div>  
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
