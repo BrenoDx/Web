@@ -18,7 +18,7 @@ Minor adjustments to the original wireframe are allowed. Dynamic elements (such 
 
 ## 🚧 Status do projeto | Project Status
 
-- 🟡 Finalizado | COmpleted  
+- 🟢 Finalizado | Completed  
 - ✅ Estrutura e layout prontos com HTML e CSS | Structure and layout completed with HTML and CSS  
 
 ---
